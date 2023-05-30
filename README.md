@@ -1,4 +1,4 @@
-# havi
+# HAVI ChuGo Dev-Stack
 Repository for havi-stellar
 
 # Docker Installation

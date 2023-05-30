@@ -17,11 +17,14 @@ Make sure node js is updated >= v18
 # Prepare Chugo Dev Environment
 Open Powershell
 Go to D: or C: 
-mkdir chugo\havi
-cd chugo\havi
+mkdir chugo
+cd chugo
 enter chugo directory and run [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 run Start-BitsTransfer -Source "https://github.com/docker/compose/releases/download/v2.18.1/docker-compose-windows-x86_64.exe" -Destination $Env:ProgramFiles\Docker\docker-compose.exe
 
 # Development Stack Installation
 npm create refine-app@latest [name of app e.g "havi"]
+cd havi or name of the refine app
+git clone https://github.com/andrecorugda/havi.git .
+docker-compose up -d
 
